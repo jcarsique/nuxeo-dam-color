@@ -3,26 +3,18 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.nuxeo</groupId>
-    <artifactId>nuxeo-addons-parent</artifactId>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
     <version>7.10</version>
   </parent>
 
   <groupId>org.nuxeo.dam.color</groupId>
   <artifactId>nuxeo-dam-color-parent</artifactId>
   <version>7.10-SNAPSHOT</version>
-  <name>Nuxeo DAM Demo :: Parent pom</name>
+  <name>Nuxeo DAM Color Demo :: Parent pom</name>
   <packaging>pom</packaging>
 
-  <description />
-
-  <properties>
-    <nuxeo.project.version>${project.version}</nuxeo.project.version>
-    <nuxeo.version>7.10</nuxeo.version>
-    <nuxeo.distribution.version>7.10</nuxeo.distribution.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
+  <description>TODO</description>
 
   <modules>
     <module>nuxeo-dam-color-core</module>
@@ -33,34 +25,25 @@
 
   <dependencyManagement>
     <dependencies>
-      <!--
-        <dependency>
-        <groupId>org.nuxeo.ecm.distribution</groupId>
-        <artifactId>nuxeo-distribution</artifactId>
-        <scope>import</scope>
-        <type>pom</type>
-        <version>${nuxeo.version}</version>
-        </dependency>
-      -->
       <dependency>
         <groupId>org.nuxeo.dam.color</groupId>
         <artifactId>nuxeo-dam-color-core</artifactId>
-        <version>${nuxeo.project.version}</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nuxeo.dam.color</groupId>
         <artifactId>nuxeo-dam-color-ui</artifactId>
-        <version>${nuxeo.project.version}</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nuxeo.dam.color</groupId>
         <artifactId>nuxeo-dam-color-demo</artifactId>
-        <version>${nuxeo.project.version}</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nuxeo.dam.color</groupId>
         <artifactId>nuxeo-dam-color-mp</artifactId>
-        <version>${nuxeo.project.version}</version>
+        <version>${project.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
